@@ -1,0 +1,11 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: bookStore
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8088/eureka

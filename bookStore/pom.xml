@@ -9,9 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <description>eureka-server</description>
-    <artifactId>eureka-server</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>bookStore</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <name>bookStore</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -19,19 +21,34 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
-        <!-- <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bookstrap</artifactId>
-            <version>3.1.0</version>
-        </dependency> -->
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <version>2.2.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
@@ -46,14 +63,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.springframework.boot</groupId>
-                            <artifactId>spring-boot-configuration-processor</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
+                <version>2.2.2.RELEASE</version>
             </plugin>
         </plugins>
     </build>
