@@ -12,14 +12,14 @@
 
     <modules>
         <module>eureka-server</module>
-    <!-- <module>nacos-consumer</module>
-    <module>gateway-example</module> -->
+        <module>gateway</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-        <spring-boot-dependencies.version>2.3.2.RELEASE</spring-boot-dependencies.version>
+        <spring-cloud.version>2020.0.3</spring-cloud.version>
+        <spring-boot-dependencies.version>2.4.6</spring-boot-dependencies.version>
         <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
         <commons-lang3.version>3.11</commons-lang3.version>
         <fastJson.version>[1.2.83,)</fastJson.version>
