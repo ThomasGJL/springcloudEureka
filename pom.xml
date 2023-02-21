@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>hystrix-dashboard</module>
         <module>bookStore</module>
+        <module>bookWare</module>
     </modules>
 
     <properties>

@@ -9,6 +9,15 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: bookstore
+          uri: lb://bookstore
+          predicates:
+            - Path=/bookstore/**
+        - id: bookware
+          uri: lb://bookware
+          predicates:
+            - Path=/bookware/**
 
 eureka:
   client:
