@@ -14,10 +14,14 @@ spring:
           uri: lb://bookstore
           predicates:
             - Path=/bookstore/**
+          filters:
+            - StripPrefix=1
         - id: bookware
           uri: lb://bookware
           predicates:
             - Path=/bookware/**
+          filters:
+            - StripPrefix=1
 
 eureka:
   client:
