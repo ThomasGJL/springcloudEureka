@@ -23,7 +23,7 @@ public class BookController {
 
     @GetMapping("/healthz")
     public String healthz() {
-        String serverStatus = "The server is up and running.";
+        String serverStatus = "The bookware app is up and running.";
 
         log.info(serverStatus);
 
